@@ -1,0 +1,15 @@
+h1#project {
+    color: purple;
+    font-size: 4em;
+}
+
+h1 {
+    font-size: 3em;
+    color:green;
+}
+
+h2 {
+    font-size: 3em;
+    color: red;
+}
+span {color: red}
