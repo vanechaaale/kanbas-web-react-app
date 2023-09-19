@@ -17,7 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://127.0.0.1:5500/kanbas/home.html",
+  "homepage": "http://127.0.0.1:5500/public/kanbas/home.html",
   "eslintConfig": {
     "extends": [
       "react-app",
