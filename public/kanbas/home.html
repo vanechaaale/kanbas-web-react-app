@@ -3,27 +3,25 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+   <link rel="stylesheet" href="../styles.css">
+   <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
 </head>
 <body>
-<table width="100%">
-   <thead>
-   </thead>
-   <tbody>
-   <tr valign="top">
-        <td width="10%"> 
-            <li> <a href="account.html"> Account</a> </li> 
-            <li> <a href="#"> Dashboard</a></li>
-            <li> <a href="courses.html"> Courses</a></li>
-            <li> <a href="#"> Calendar</a></li>
-            <li> <a href="#"> Inbox</a></li>
-            <li> <a href="#"> History</a></li>
-            <li> <a href="#"> Studio</a></li>
-            <li> <a href="#"> Commons</a></li>
-            <li> <a href="#"> Help</a></li>
-
-        </td> 
-        <td width="15%">
-            <li><a href="home.html"> Home</a></li>
+<div class="wd-flex-row-container">
+    <div class="wd-kanbas-navigator"> 
+        <i class="fa fa-user-circle fa-2x"></i>
+        <li> <a href="account.html"> Account</a> </li> 
+        <li> <a href="#"> Dashboard</a></li>
+        <li> <a href="courses.html"> Courses</a></li>
+        <li> <a href="#"> Calendar</a></li>
+        <li> <a href="#"> Inbox</a></li>
+        <li> <a href="#"> History</a></li>
+        <li> <a href="#"> Studio</a></li>
+        <li> <a href="#"> Commons</a></li>
+        <li> <a href="#"> Help</a></li>
+    </div>
+    <div class="wd-kanbas-navigator">
+        <li><a href="home.html"> Home</a></li>
             <li><a href="#">Modules</a></li>
             <li><a href="#">Piazza</a></li>
             <li><a href="#">Zoom Meetings</a></li>
@@ -41,9 +39,9 @@
             <li><a href="#">Collaborations</a></li>
             <li><a href="#">Syllabus</a></li>
             <li><a href="#">Settings</a></li>
-        </td>
-       <td>
-            <button type="button">Collapse All</button>
+    </div>
+    <div>
+        <button type="button">Collapse All</button>
             <button type="button">View Progress</button>
             <select id="publish-all">
                 <option selected value="SCIFI">
@@ -85,8 +83,9 @@
                         <li> Full Stack Developer - Chapter 2- Creating User Interfaces with HTML </li>
                     </ul>
             </ul>
-        </td>
-        <td> <h2> Course Status </h2>
+    </div>
+    <div>
+        <h2> Course Status </h2>
             <button type="button">Unpublish</button>
             <button type="button">Published</button>
             <ul> 
@@ -107,10 +106,6 @@
                 <li> <a href="#"> CS5610 06 SP23 Lecture Sep 11 at 6 pm </a> </li>
     
             </ul>
-        </td>
-   </tr>
-   </tbody>
-   <tfoot>
-   </tfoot>
-</table>
+    </div>
+</div>
 </html>
