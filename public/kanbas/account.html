@@ -4,59 +4,74 @@
    <meta charset="UTF-8">
    <title>Title</title>
    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="../styles.css">
+   <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<table width="25%">
-   <thead>
-   </thead>
-   <tbody>
-   <tr valign="top">
-        <td width="10%"> 
-            <ul> <i class="fa fa-user-circle fa-2x"></i>
-                <br>
-                <a href="#"> Account</a>
-            </ul>
-            <ul> 
-                <i class="fa fa-tachometer fa-2x"></i>
-                <br>
-                <a href="#"> Dashboard</a>
-            </ul>
-            <ul> <i class="fa fa-book fa-2x"></i>
-                <br>
-                <a href="courses.html"> Courses</a></ul>
-            <ul> <i class="fa fa-calendar fa-2x"></i>
-                <br>
-                <a href="#"> Calendar</a></ul>
-            <ul> <i class="fa fa-inbox fa-2x"></i>
-                <br><a href="#"> Inbox</a></ul>
-            <ul> <i class="fa fa-clock fa-2x"></i>
-                <br>
-                <a href="#"> History</a></ul>
-            <ul> <i class="fa fa-desktop fa-2x"></i>
-                <br>
-                <a href="#"> Studio</a></ul>
-            <ul> <i class="fa fa-chevron-circle-right fa-2x"></i>
-                <br><a href="#"> Commons</a></ul>
-            <ul> <i class="fa fa-question-circle fa-2x"></i>
-                <br>
-                <a href="#"> Help</a></ul>
+    
+<div class="wd-grid-row">
+    <div class="wd-kanbas-navigator"> 
+        <li style="background-color: white;">
+            <a style="color: red"  href="account.html"><i class="fa fa-user-circle fa-2x"></i>Account</a> </li> 
+        <li> 
+            <a href="dashboard.html"> <i class="fa fa-bars fa-2x"></i> Dashboard</a></li>
+        <li>
+            <a href="courses.html"> <i class="fa fa-book fa-2x"></i> Courses</a>
+        </li>
+        <li> 
+            <a href="#"> <i class="fa fa-calendar fa-2x"></i> Calendar</a></li>
+        <li>
+            <a href="#"> <i class="fa fa-inbox fa-2x"></i> Inbox</a>
+        </li>
+        <li>
+            <a href="#"> <i class="fa fa-clock fa-2x"></i> History</a>
+        </li>
+        <li> 
+            <a href="#"> <i class="fa fa-desktop fa-2x"></i> Studio</a>
+        </li>
+        <li>
+            <a href="#"> <i class="fa fa-question-circle fa-2x"></i> <br> Help</a></li>
+    </div>
+    <div class="wd-grid-col-page-header"> <i class="fa fa-bars fa-2x"> </i> <span style="padding-left: 10px; font-size: 1.3em; font-family: Arial;"> Jose Annunziato's Profile   </span>
+        <div> <p>  </p></div>
+        <hr>
+    </div>
+</div>
 
-        </td> 
-        <td width="15%">
-            <li><a href="#"> Notifications</a> </li>
-            <li><a href="./profile/index.html"> Profile</a> </li>
-            <li><a href="#"> Files</a> </li>
-            <li><a href="#"> Settings</a> </li>
-            <li><a href="#"> ePortfolios</a> </li>
-            <li><a href="#"> Shared Content</a> </li>
-            <li><a href="#"> The Hub</a> </li>
-            <li><a href="#"> Qwickly Course Tools</a> </li>
-            <li><a href="#"> Global Announcements</a> </li>
-
-        </td>
-   </tr>
-   </tbody>
-   <tfoot>
-   </tfoot>
-</table>
+<div class="wd-flex-row-container">
+    <div class="wd-kanbas-page-navigator">
+        <br>
+        <li><a href="#"> Notifications</a> </li>
+        <li style="color: black; border-left: 2px solid">
+            <a style="color: black; font-weight: 600;" href="account.html"> Profile</a> 
+        </li>
+        <li><a href="#"> Files</a> </li>
+        <li><a href="#"> Settings</a> </li>
+        <li><a href="#"> ePortfolios</a> </li>
+        <li><a href="#"> Shared Content</a> </li>
+        <li><a href="#"> The Hub</a> </li>
+        <li><a href="#"> Qwickly Course Tools</a> </li>
+        <li><a href="#"> Global Announcements</a> </li>
+    </div>
+    <div class="wd-grid-half-col">
+        <i class="fa fa-user-circle fa-6x"></i>
+        <p style="font-size: 28px;"> Jose Annunziato</p>
+        <p style="font-size: 22px"> Contact </p>
+        <div> 
+            No registered services, you can add some on the <a href="#">settings</a> page.
+        </div>
+        <p style="font-size: 22px"> Biography</p>
+        <div> 
+            Faculty, Software Engineer, AI, Space, and renewables enthusiast.
+        </div>
+        <p style="font-size: 22px;"> Links </p>
+        <div>
+            <i class="fa fa-link fa-1x"> </i> <a href="#"> YouTube  <i class="fa fa-external-link-alt"></i> </a>
+        </div>
+    </div>
+    <div style="width: 33%">
+        <button style="font-size: 20px; float: right; margin-right: 10px; margin-top: 20px" type="button" onclick="window.location.href='profile/edit.html'"> <i class="fa fa-pen fa-rotate-270 fa-1x"></i> Edit Profile</button>
+        <br>
+    </div>
+</div>
 </html>

@@ -3,28 +3,48 @@
 <head>
    <meta charset="UTF-8">
    <title>Title</title>
+   <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+   <link rel="stylesheet" href="../../styles.css">
+   <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<table width="100%">
-   <thead>
-   </thead>
-   <tbody>
-   <tr valign="top">
-        <td width="10%"> 
-            <li> <a href="../account.html"> Account</a> </li> 
-            <li> <a href="#"> Dashboard</a></li>
-            <li> <a href="../courses.html"> Courses</a></li>
-            <li> <a href="#"> Calendar</a></li>
-            <li> <a href="#"> Inbox</a></li>
-            <li> <a href="#"> History</a></li>
-            <li> <a href="#"> Studio</a></li>
-            <li> <a href="#"> Commons</a></li>
-            <li> <a href="#"> Help</a></li>
 
-        </td> 
-        <td width="15%">
+    <div class="wd-grid-row">
+        <div class="wd-kanbas-navigator"> 
+            <li style="background-color: white;">
+                <a style="color: red"  href="../account.html"><i class="fa fa-user-circle fa-2x"></i>Account</a> </li> 
+            <li> 
+                <a href="../dashboard.html"> <i class="fa fa-bars fa-2x"></i> Dashboard</a></li>
+            <li>
+                <a href="../courses.html"> <i class="fa fa-book fa-2x"></i> Courses</a>
+            </li>
+            <li> 
+                <a href="#"> <i class="fa fa-calendar fa-2x"></i> Calendar</a></li>
+            <li>
+                <a href="#"> <i class="fa fa-inbox fa-2x"></i> Inbox</a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-clock fa-2x"></i> History</a>
+            </li>
+            <li> 
+                <a href="#"> <i class="fa fa-desktop fa-2x"></i> Studio</a>
+            </li>
+            <li>
+                <a href="#"> <i class="fa fa-question-circle fa-2x"></i> <br> Help</a></li>
+        </div>
+        <div class="wd-grid-col-page-header"> <i class="fa fa-bars fa-2x"> </i> <span style="padding-left: 10px; font-size: 1.3em; font-family: Arial;"> Jose Annunziato's Profile   </span>
+            <div> <p>  </p></div>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="wd-flex-row-container">
+        <div class="wd-kanbas-page-navigator">
+            <br>
             <li><a href="#"> Notifications</a> </li>
-            <li><a href="index.html"> Profile</a> </li>
+            <li style="color: black; border-left: 2px solid">
+                <a style="color: black; font-weight: 600;" href="index.html"> Profile</a> 
+            </li>
             <li><a href="#"> Files</a> </li>
             <li><a href="#"> Settings</a> </li>
             <li><a href="#"> ePortfolios</a> </li>
@@ -32,50 +52,67 @@
             <li><a href="#"> The Hub</a> </li>
             <li><a href="#"> Qwickly Course Tools</a> </li>
             <li><a href="#"> Global Announcements</a> </li>
-
-        </td>
-       <td>
-            <h2> Jose Annunziato </h2>
+        </div>
+        <div class="wd-grid-half-col">
+            <i class="fa fa-user-circle fa-6x"></i>
             <div> <p> </p></div>
-            Name:* <input type="text" value="Jose Annunziato">
-            Pronouns: <select id="pronoun-select"> 
+            <b>Name:* </b>
+            <input class="form-control" style="padding: 8px 12 px;" type="text" value="Jose Annunziato">
+            <br>
+            <b>Pronouns:</b>
+            <br>
+            <select id="pronoun-select"> 
                 <option selected value="None">
                     None
                 </option>
             </select>
             <br>
             <div> <p> </p></div>
-            Title: <input type="text">
-            <br>
+            <b>Title:</b>
+            <input class="form-control" type="text">
             <div> <p> </p></div>
-            <p style="font-size: 22px;"> <b> Contact </b></p>
+            <h3>Contact </h3>
             <div> <p> No registered services, you can add some on the <a href="#"> settings</a> page.</a></p></div>
-            <br>
-            <p style="font-size: 22px;"> <b> Biography </b></p>
-            Faculty, Software Engineer, AI, Space, and renwables enthusiast.
-            <br>
-            <input style="text-align-last:left; padding-top: 0%; height:50px;" size="40px" type="text" value="Faculty, Software Engineer, AI, Space, and renewables enthusiast.">
+            <h3> Biography </h3>
+            <textarea id="biography-text-area" class="form-control" width=100% rows="3"> Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
             <br>
             <div> <p> </p></div>
-            <p style="font-size: 22px;"> <b> Links </b> </p>
-            <ul> <li> <a href="#"> YouTube Links to an external site.</a></li>
-                <br>
-                <b> Title &emsp; &emsp; &emsp; &emsp; URL </b>
-            </ul>
-            <input size="8px" type="text" value="YouTube"> -> <input size="8px" type="text" value="https://www.youtube.com"> <a href="#"> Remove</a> 
-            <br>
-            <button type="button"> Add another link</button>
-            <br>
-            <button type="button">Cancel</button>
-            <button type="button" onclick="window.location.href='./index.html'">Save Profile</button>
-            <br>
-            <button type="button">Edit Profile</button>
-            <button type="button" onclick="window.location.href='./index.html'">Cancel Editing</button>
-        
-        </td>
-   </tr>
-   </tbody>
-   <tfoot>
-   </tfoot>
-</table>
+            <h3 >Links  </h3>
+            <div class="profile-links-grid">
+                <div class="row">
+                  <div class="col-4">
+                    <b> Title</b>
+                  </div>
+                  <div class="col">
+                  </div>
+                  <div class="col-4">
+                    <b> URL</b>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="YouTube">
+                    </div>
+                    <div  class="col">
+                        →
+                    </div>
+                    <div class="col-4">
+                        <input class="form-control" type="text" value="https://www.youtube.com/watch?v=xgY59LQfZSA">
+                    </div>
+                    <div class="col"> 
+                        <a href="#"> <i class="fa fa-times"></i></a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-secondary" style="margin-left: 0px" type="button"> Add another link</button>
+            <hr>
+            <button class="btn btn-danger float-end" type="button" onclick="window.location.href='./index.html'">Save Profile</button>
+            <button class="btn btn-secondary float-end" type="button" onclick="window.location.href='./index.html'">Cancel</button>
+        </div>
+
+    <div style="width: 33%">
+        <button class="btn btn-secondary float-end" type="button" onclick="window.location.href='index.html'"> <i class="fa fa-pen fa-rotate-270 fa-1x"></i> Cancel Editing</button>
+        <br>
+    </div>
 </html>
