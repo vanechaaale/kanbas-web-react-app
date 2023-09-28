@@ -132,29 +132,70 @@
      margin-left: 24px;
      width: 92%;
  }
- .wd-kanbas-dashboard-grid {
-    margin-left: 36px;
-    display: inline-block;
- }
  .course-card {
-    width: 260px;
+    width: 262px;
+    height: 270px;
+    margin-right: 35px;
+    margin-bottom: 35px;
     
  }
- .course-card.content {
+ .course-card-content {
+    text-decoration: none;
+ }
+ .course-card-content-text :hover {
+    text-decoration: underline;
+ }
+ .course-card-content-text {
     padding: 12px 18px 0;
-
+ }
+ .course-card-content :hover {
+    text-decoration: underline;
  }
  .course-card-title {
+    display: inline-block;
     font-size: 14px;
     font-family: "Lato Extended","Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: rgb(0, 118, 184);
+ }
+ 
+ .course-card.title span {
+    color: rgb(0, 118, 184);
  }
  .course-card-subtitle {
     color: #677179;
     font-size: 16px;
     font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    text-overflow: ellipsis
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
  }
- .container {
-    margin-left: 36px;
+ .course-card-details {
+    color: #677179;
+    font-size: 12px;
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+ }
+ .course-card-img {
+    margin: 0; 
+    height: 146px; 
+    width: 261px; 
+    background-color: rgb(0, 118, 184);
+ }
+ .course-card-icon {
+    margin-left: 18px;
+    margin-top: 12px;
+    margin-right: 18px;
+    margin-bottom: 12px;
+    color: gray;
+    text-decoration: none;
+ }
+ .course-card-icon :hover {
+    text-decoration: none;
+    color: red;
  }
