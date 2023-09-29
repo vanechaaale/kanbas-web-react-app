@@ -12,6 +12,7 @@
     font-size: .9em;
     float: left;
     min-height: 100vh;
+    position: fixed;
 }
 .wd-kanbas-navigator li {
     list-style-type: None;
@@ -34,6 +35,7 @@
     font-size: 1em;
     float: left;
     width: 190px;
+    padding-left: 82px;
 }
 .wd-kanbas-page-navigator li {
     text-decoration: none;
@@ -112,6 +114,9 @@
  }
  .profile-links-grid .col {
     width: 10% !important;
+ }
+ .wd-kanbas-dashboard-navigator {
+   padding-left: 82px;
  }
  .wd-kanbas-dashboard-title {
     color: rgb(45, 59, 69);
@@ -216,12 +221,64 @@
  .container-home-buttons {
     padding: 10px 10px;
 }
+.container-modules {
+   width: 80%;
+   padding: 20px;
+}
  .container-modules hr {
     margin-top: 65px;
-  }
-  .module-title-icon {
+}
+.module-title-icon {
     float: right;
     color:#677179;
     padding-left: 20px;
     padding-top: 5px;
-  }
+}
+.container-module-item-icons {
+   float: right;
+}
+.module-item-icon {
+   margin-left: 15px;
+}
+.container-course-status {
+   width: 290px;
+   padding: 16px 16px;
+}
+.container-course-status h2 {
+   font-size: 16px;
+}
+.container-course-status li {
+   list-style-type: none;
+}
+.container-course-status ul {
+   padding-left: 0;
+}
+.container-course-status button {
+   width: 240px;
+   margin: 4px;
+   margin-right: 20px;
+   text-align: left;
+}
+.breadcrumb-header {
+   padding-top: 25px;
+   font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 18px;
+   color: rgb(45, 59, 69);
+   font-weight: 400; 
+}
+.container-coming-up {
+   padding: 0px 10px 0 10px;
+}
+.container-coming-up a {
+   text-decoration: none;
+   color: #b52828;
+}
+.container-coming-up li {
+   text-decoration: none;
+   margin-top: 15px;
+}
+.container-coming-up li:before {
+   font-family: FontAwesome;
+   content: "\f133";
+   color: red;
+}
