@@ -5,12 +5,13 @@
    <title>Title</title>
    <link rel="stylesheet" href="../styles.css">
    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+   <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<div class="wd-flex-row-container">
+<div class="wd-grid-row">
     <div class="wd-kanbas-navigator"> 
         <li>
-            <a href="account.html"><i class="fa fa-user-circle fa-2x"></i>Account</a> </li> 
+            <a  href="account.html"><i class="fa fa-user-circle fa-2x"></i>Account</a> </li> 
         <li> 
             <a href="dashboard.html"> <i class="fa fa-bars fa-2x"></i> Dashboard</a></li>
         <li style="background-color: white;">
@@ -30,8 +31,22 @@
         <li>
             <a href="#"> <i class="fa fa-question-circle fa-2x"></i> <br> Help</a></li>
     </div>
+    <div class="wd-grid-col-page-header"> 
+        <i style="float: left" class="fa fa-bars fa-2x"> </i> 
+        <nav style="--bs-breadcrumb-divider: '>'; margin-left: 50px" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a style="color: #b52828; text-decoration: none;"href="courses">name.term.section</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>    
+        </nav>    
+        <hr style="margin-top: 25px">
+    </div>
+</div>
+<div class="wd-flex-row-container">
     <div class="wd-kanbas-page-navigator">
-            <li><a href="home.html"> Home</a></li>
+            <li style="color: black; border-left: 2px solid">
+                <a style="color: black; font-weight: 600;" href="home.html"> Home</a>
+            </li>
             <li><a href="#">Modules</a></li>
             <li><a href="#">Piazza</a></li>
             <li><a href="#">Zoom Meetings</a></li>
@@ -50,33 +65,76 @@
             <li><a href="#">Syllabus</a></li>
             <li><a href="#">Settings</a></li>
     </div>
-    <div>
-        <button type="button">Collapse All</button>
-            <button type="button">View Progress</button>
-            <select id="publish-all">
-                <option selected value="SCIFI">
-                Publish All</option>
-            </select>
-            <button type="button">Module</button>
-            <ul>
-                <li>Week 0 -  INTRO</li> 
-                
-                <ul> 
-                 <li>LEARNING OBJECTIVES</li>
-                     <ul> 
-                         <li>Introduction to the course</li>
-                         <li>Learn what is Web Development</li>
-                         <li>Creating a development environment</li>
-                         <li>Creating a Web Application</li>
-                         <li>Getting started with the 1st assignment</li>
+    <div class="container-modules">
+        <div class="container-home-buttons float-end">
+            <button class="btn btn-secondary">Collapse All</button>
+            <button class="btn btn-secondary">View Progress</button>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="publish-all" data-bs-toggle="dropdown">Publish All</button>
+            <ul class="dropdown-menu">
+            </ul>
+            <button class="btn btn-danger">
+                <i class="fa fa-plus fa-1x"></i>
+                Module
+            </button>
+            <button class="btn btn-secondary">
+                <i class="fa fa-ellipsis-v"></i>
+            </button>
+        </div>
+            <hr> 
+            <ul class="module list-group">
+                <li class="list-group-item-secondary px-3 py-2">
+                    Week 0 -  INTRO
+                    <i class="fa fa-ellipsis-v fa-1x module-title-icon"></i>
+                    <i class="fa fa-plus fa-1x module-title-icon"></i>
+                </li> 
+                <ul class="list-group"> 
+                 <li class="list-group-item">LEARNING OBJECTIVES</li>
+                     <ul class="list-group"> 
+                         <li class="list-group-item px-5">
+                            Introduction to the course
+                            <i style="float:right"class="fa fa-ellipsis-v"> </i>
+                            <i style="float: right; color: green" class="fa fa-check-circle"></i>
+                        </li>
+                         <li class="list-group-item px-5">Learn what is Web Development</li>
+                         <li class="list-group-item px-5">Creating a development environment</li>
+                         <li class="list-group-item px-5">Creating a Web Application</li>
+                         <li class="list-group-item px-5">Getting started with the 1st assignment</li>
                      </ul>
-                 <li> READING </li>
-                     <ul> <li> Full Stack Developer - Chapter 1- Introduction </li> </ul>
-                     <ul> <li> Full Stack Developer - Chapter 2 - Creating User Interfactes With HTML </li> </ul>
-                 <li> SLIDES</li>
-                     <ul> <li> <a href="#"> Introduction to Web Development Links to an external site.</a></li></ul>
-                     <ul> <li> <a href="#"> Creating an HTTP server with Node.js Links to an external site. </a></li></ul>
-                     <ul> <li> <a href="#"> Creating a React Application Links to an external site. </a></li></ul>
+                 <li class="list-group-item"> READING </li>
+                    <ul class="list-group"> 
+                        <li class="list-group-item px-5"> Full Stack Developer - Chapter 1 - Introduction </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item px-5"> Full Stack Developer - Chapter 2 - Creating User Interfactes With HTML </li>
+                    </ul>
+                 <li class="list-group-item"> SLIDES</li>
+                    <ul class="list-group">
+                        <li class="list-group-item px-5"> 
+                            <a href="#"> 
+                                <i style="color: green; float: left; margin-left: -30px" class="fa fa-link fa-1x"></i> 
+                                Introduction to Web Development 
+                                <i class="fa fa-external-link-alt fa-1x"> </i> 
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-group"> 
+                        <li class="list-group-item px-5"> 
+                            <a href="#"> 
+                                <i style="color: green; float: left; margin-left: -30px" class="fa fa-link fa-1x"></i> 
+                                Creating an HTTP server with Node.js 
+                                <i class="fa fa-external-link-alt fa-1x"> </i> 
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="list-group"> 
+                        <li class="list-group-item px-5"> 
+                            <a href="#"> 
+                                <i style="color: green; float: left; margin-left: -30px" class="fa fa-link fa-1x"></i> 
+                                Creating a React Application 
+                                <i class="fa fa-external-link-alt fa-1x"> </i> 
+                            </a>
+                        </li>
+                    </ul>
                 </ul>
              </ul>
              <ul> 

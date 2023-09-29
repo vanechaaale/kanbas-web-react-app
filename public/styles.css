@@ -199,3 +199,29 @@
     text-decoration: none;
     color: red;
  }
+ .module {
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4c5860;
+    list-style-type: none;
+    margin-left: 30px;
+    margin-top: 25px;
+ }
+ .list-group a {
+    text-decoration: none;
+    color: #b52828;
+    font-weight: normal;
+ }
+ .container-home-buttons {
+    padding: 10px 10px;
+}
+ .container-modules hr {
+    margin-top: 65px;
+  }
+  .module-title-icon {
+    float: right;
+    color:#677179;
+    padding-left: 20px;
+    padding-top: 5px;
+  }
