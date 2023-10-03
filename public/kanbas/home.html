@@ -29,6 +29,9 @@
             <a href="#"> <i class="fa fa-desktop fa-2x"></i> Studio</a>
         </li>
         <li>
+            <a href="#"> <i class="fa fa-arrow-circle-right fa-2x"></i> Commons </a>
+        </li>
+        <li>
             <a href="#"> <i class="fa fa-question-circle fa-2x"></i> <br> Help</a></li>
     </div>
     <div class="wd-grid-col-page-header"> 
@@ -46,8 +49,8 @@
 </div>
 <div class="wd-flex-row-container">
     <div class="wd-kanbas-page-navigator">
-            <li style="color: black; border-left: 2px solid">
-                <a style="color: black; font-weight: 600;" href="home.html"> Home</a>
+            <li class="selected-page-nav-link">
+                <a href="home.html"> Home</a>
             </li>
             <li><a href="#">Modules</a></li>
             <li><a href="#">Piazza</a></li>
@@ -68,7 +71,7 @@
             <li><a href="#">Settings</a></li>
     </div>
     <div class="container-modules">
-        <div class="container-home-buttons float-end">
+        <div class="course-container-header-buttons float-end">
             <button class="btn btn-secondary">Collapse All</button>
             <button class="btn btn-secondary">View Progress</button>
             <button class="btn btn-secondary dropdown-toggle" type="button" id="publish-all" data-bs-toggle="dropdown">Publish All</button>
@@ -86,8 +89,12 @@
             <ul class="module list-group">
                 <li class="list-group-item-secondary px-3 pe-3 py-2">
                     Week 0 -  INTRO
-                    <i class="fa fa-ellipsis-v fa-1x module-title-icon"></i>
-                    <i class="fa fa-plus fa-1x module-title-icon"></i>
+                    <button style="float: right" class="btn">         
+                        <i class="fa fa-ellipsis-v fa-1x module-title-icon p-0"></i>
+                    </button>
+                    <button style="float: right;" class="btn">
+                        <i class="fa fa-plus fa-1x module-title-icon p-0"></i>
+                    </button>
                 </li> 
                 <ul class="list-group"> 
                  <li class="list-group-item">LEARNING OBJECTIVES</li>
