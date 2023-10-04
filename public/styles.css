@@ -336,12 +336,8 @@
    font-family: Lato Extended, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
    color: green;
 }
-.assignment-edit {
-   margin-bottom: 20px;
-}
 .assignment-edit-label {
    text-align: right;
-   margin-bottom: 20px;
 }
 .online-entry-options input {
    margin-top: 20px;
@@ -351,4 +347,6 @@
 }
 .assignment-edit-assign-to {
    border: 1px solid rgb(206, 212, 218); border-radius: .25em; border-bottom-left-radius: 0em; border-bottom-right-radius: 0em;
+}
+.grades-header-buttons button {
 }
