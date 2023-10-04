@@ -326,3 +326,29 @@
 .unfinished li {
    border-left: 1px solid #c7cdd1;
 }
+.wd-kanbas-navigator a:hover {
+   color: white;
+}
+.wd-kanbas-page-navigator a:hover {
+   color: #b52828;
+}
+.assignment-published {
+   font-family: Lato Extended, Lato, Helvetica Neue, Helvetica, Arial, sans-serif;
+   color: green;
+}
+.assignment-edit {
+   margin-bottom: 20px;
+}
+.assignment-edit-label {
+   text-align: right;
+   margin-bottom: 20px;
+}
+.online-entry-options input {
+   margin-top: 20px;
+}
+.online-entry-options label {
+   padding-left: 5px;
+}
+.assignment-edit-assign-to {
+   border: 1px solid rgb(206, 212, 218); border-radius: .25em; border-bottom-left-radius: 0em; border-bottom-right-radius: 0em;
+}
