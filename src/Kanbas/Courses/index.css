@@ -1,0 +1,59 @@
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+.wd-kanbas-navigator {
+    color: #d41b2c;
+    text-decoration: none;
+    padding-left: 0px;
+    margin-left: -8px;
+    width: 82px;
+    font-family: Arial;
+    font-size: .9em;
+    float: left;
+    min-height: 100vh;
+    position: fixed;
+}
+.wd-kanbas-navigator li {
+    list-style-type: None;
+    margin-left: 0px;
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+}
+.wd-kanbas-navigator a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.wd-kanbas-navigator i {
+    color: #d41b2c;
+    margin-bottom: 5px;
+}
+.wd-kanbas-page-navigator {
+    font-family: Arial;
+    font-size: 1em;
+    float: left;
+    width: 190px;
+    padding-left: 82px;
+}
+.wd-kanbas-page-navigator li {
+    text-decoration: none;
+    list-style-type: None;
+    margin-left: 20px;
+    padding: 8px 0 8px 6px;
+
+}
+.wd-kanbas-page-navigator a {
+    color: #b52828;
+    text-decoration: none;
+}
+.wd-grid-row {
+    clear: both;
+ }
+ .wd-grid-col-page-header {
+    width: 91%;
+    float: top;
+    margin-left: 120px;
+    color: #2d3b45;
+ }

@@ -1,0 +1,21 @@
+.wd-kanbas-navigator {
+    background-color: black;
+    font-size: .85em;
+    width: 100px;
+}
+.wd-kanbas-navigator a {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border: none;
+}
+.list-group-item.active {
+    background-color: white !important;
+    border-color: white;
+    color: #d41b2c !important;
+}
+.list-group-item svg {
+    width: 1.8em;
+    height: 1.8em;
+    color: #d41b2c;
+}

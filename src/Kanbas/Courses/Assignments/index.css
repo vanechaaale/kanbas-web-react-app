@@ -1,0 +1,42 @@
+.container-assignments {
+    width: 100%;
+    padding: 25px;
+    padding-left: 10px;
+ }
+ .assignments ul {
+    background-color: rgb(245, 245, 245);
+    border-bottom-color: rgb(199, 205, 209);
+    border-top-color: rgb(199, 205, 209);
+    border-left-color: rgb(199, 205, 209);
+    border-right-color: rgb(199, 205, 209);
+    border: 1px solid #c7cdd1;
+ }
+ .assignments li {
+    list-style-type: none;
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: rgb(76, 88, 96);
+    padding-left: 60px;
+    border-left: 5px solid green;
+ }
+ .assignment-item-icons {
+    float: right;
+    size: 18px;
+ }
+ .assignments a {
+    font-family: "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #2d3b45;
+    font-weight: bold;
+ }
+ .badge {
+    font-size: 14px !important;
+    margin-top: 3px !important;
+    border-radius: 1rem !important;
+    color: #5f6367 !important;
+    border-color: #c7cdd1 !important;
+    border: 1px solid;
+ }
+ .unfinished li {
+    border-left: 1px solid #c7cdd1;
+ }
