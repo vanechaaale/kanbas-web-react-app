@@ -7,12 +7,11 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import {RxHamburgerMenu} from "react-icons/rx";
-import LINKS from "./CourseNavigation";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
   const {pathname} = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
         <div className="wd-grid-col-page-header"> 
@@ -21,7 +20,7 @@ function Courses() {
                 <nav aria-label="breadcrumb" style={{marginLeft: "50px"}}>
                     <ol className="breadcrumb">
                         <li className="breadcrumb-item">
-                            <a style={{textDecoration: "none", color: "#b52828"}} href="#" className="course-link">
+                            <a style={{textDecoration: "none", color: "#b52828"}} className="course-link">
                                 {course.name}
                             </a></li>
                         <li className="breadcrumb-item active" aria-current="page">

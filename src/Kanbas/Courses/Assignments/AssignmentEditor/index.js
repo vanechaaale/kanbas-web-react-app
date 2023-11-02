@@ -6,7 +6,6 @@ import {FaEllipsisV} from "react-icons/fa";
 
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();
-  const params = useParams();
   const assignment = db.assignments.find(
     (assignment) => assignment._id === assignmentId
   );

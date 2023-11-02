@@ -86,7 +86,7 @@ function Home() {
                 <hr />
                 <h2>
                     Coming Up
-                    <a style={{ fontWeight: 'normal', float: 'right', textDecoration: 'none', color: '#b52828' }} href="#">
+                    <a style={{ fontWeight: 'normal', float: 'right', textDecoration: 'none', color: '#b52828' }} >
                         View Calendar
                     </a>
                     <i style={{ float: 'right', marginRight: '10px' }} className="fa fa-calendar"></i>
@@ -95,13 +95,13 @@ function Home() {
                 <div className="container-coming-up">
                     <ul>
                         <li>
-                            <a href="#"> Lecture CS4550.12631.202410 Sep 7 at 11:45am </a>
+                            <a > Lecture CS4550.12631.202410 Sep 7 at 11:45am </a>
                         </li>
                         <li>
-                            <a href="#"> Lecture CS4550.12631.202410 Sep 11 at 11:45am </a>
+                            <a > Lecture CS4550.12631.202410 Sep 11 at 11:45am </a>
                         </li>
                         <li>
-                            <a href="#"> CS5610 06 SP23 Lecture Sep 11 at 6 pm </a>
+                            <a > CS5610 06 SP23 Lecture Sep 11 at 6 pm </a>
                         </li>
                     </ul>
                 </div>

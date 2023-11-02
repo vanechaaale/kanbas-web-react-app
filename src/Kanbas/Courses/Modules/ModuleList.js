@@ -1,17 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
-import {AiOutlinePlus} from 'react-icons/ai';
-import {FaEllipsisV} from 'react-icons/fa';
 import {AiFillCheckCircle} from 'react-icons/ai';
+import { useSelector, useDispatch } from "react-redux";
+import { FaEllipsisV } from "react-icons/fa";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
+
   return (
     <ul className="list-group">
+        <li className="list-group-item">
+        <div className="row">
+          <div className="col-6">
+              <input style={{marginBottom: '8px'}}className="form-control" type="text" value={module.name}
+              onChange={(e) => 
+                dispatch(setModule({ ...module, name: e.target.value }))
+              }/>
+            <textarea className="form-control" rows="3" value={module.description}
+              onChange={(e) => 
+                dispatch(setModule({ ...module, description: e.target.value }))
+              }/>
+          </div>
+          <div className="col-3">
+            <button className="btn btn-primary float-start" 
+              onClick={() => dispatch(updateModule(module))}>
+              Update
+            </button>
+            <button style={{marginLeft: '8px'}}className="btn btn-success float-start"
+              onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+              Add
+            </button>
+          </div>
+        </div>
+      </li>
+
       {modules
         .filter((module) => module.course === courseId)
         .map((module, index) => (
@@ -19,13 +53,13 @@ function ModuleList() {
           <ul key={index} className="module list-group">
             <li className="list-group-item-secondary px-3 pe-3 py-2">
                 {module.name}
-                <button style={{ float: 'right' }} className="btn">
-                    <FaEllipsisV/>
-                    <i className="fa fa-ellipsis-v fa-1x module-title-icon p-0"></i>
+                <button style={{marginLeft: '8px'}} className="btn btn-success float-end"
+                  onClick={() => dispatch(setModule(module))}>
+                  Edit
                 </button>
-                <button style={{ float: 'right' }} className="btn">
-                    <AiOutlinePlus/>
-                    <i className="fa fa-plus fa-1x module-title-icon p-0"></i>
+                <button style={{ float: 'right' }} className="btn btn-danger"
+                  onClick={() => dispatch(deleteModule(module._id))}>
+                  Delete
                 </button>
             </li>
             <ul className="list-group">
