@@ -6,8 +6,10 @@ import { useSelector } from "react-redux";
 
 function TodoList() {
     
-    const { todos } = useSelector((state) => state.todosReducer);
-
+  const [todos, setTodos] = useState([
+    { id: "1", title: "Learn React" },
+    { id: "2", title: "Learn Node"  }]);
+    
   const [todo, setTodo] = useState({ title: "Learn Mongo" });
   const addTodo = (todo) => {
     const newTodos = [ ...todos, { ...todo,
