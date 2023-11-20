@@ -53,16 +53,16 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
                           </i>
                           <img className="course-card-img" alt=""/>
                       </div>
-                      <div className="course-card-content-text">
-                          <h3 className="course-card-title">
-                              <span>{course.number} {course.name}</span>
-                          </h3>
-                          <div className="course-card-subtitle" title="Course 1 Title">
-                              {course.number}.{course.endDate.replaceAll('-','')}
-                          </div>
-                          <div className="course-card-details" title="Fall 2023 Semester Full Term">
-                          {course.endDate.replaceAll('-','')}_1 Fall 2023 Semester Full Term
-                          </div>
+                      <div className="course-card-content-text" style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                        <h3 className="course-card-title">
+                          <span>{course.number} {course.name}</span>
+                        </h3>
+                        <div className="course-card-subtitle" title="Course 1 Title">
+                          {course.number}.{course.endDate}
+                        </div>
+                        <div className="course-card-details" title="Fall 2023 Semester Full Term">
+                          {course.endDate}_1 Fall 2023 Semester Full Term
+                        </div>
                       </div>
                   </Link>
                   <div style={{height: '40px'}}className="course-card-icon-row">
