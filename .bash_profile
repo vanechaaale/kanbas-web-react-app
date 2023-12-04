@@ -1,1 +1,2 @@
-export REACT_APP_API_BASE=https://kanbas-node-server-app-6lno.onrender.com
+export REACT_APP_BASE_API_URL=http://localhost:4000/api
+

@@ -9,9 +9,9 @@ function Nav() {
             <Link className="nav-link" to="/">
                 Search</Link>
             <Link className="nav-link" to="/project/signin">
-                Signin</Link>
-            <Link className="nav-link" to="/">
-                Signup</Link>
+                Sign In</Link>
+            <Link className="nav-link" to="/project/signup">
+                Sign up</Link>
             <Link className="nav-link" to="/project/account">
                 Account</Link>
         </nav>
