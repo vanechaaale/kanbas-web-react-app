@@ -5,10 +5,8 @@ function Signin() {
     const [credentials, setCredentials] = useState({ username: "", password: "" });
     const navigate = useNavigate();
     const signin = async () => {
-        console.log("signing in...")
         await client.signin(credentials);
         navigate("/project/account");
-        console.log("navigated to /project/account")
     };
     return (
         <div>

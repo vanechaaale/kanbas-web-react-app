@@ -37,23 +37,43 @@ function Account() {
     <div className="w-50">
       <h1>Account</h1>
       {account && (
-        <div>
-          <input value={account.password}
-            onChange={(e) => setAccount({ ...account,
-              password: e.target.value })}/>
-          <input value={account.firstName}
-            onChange={(e) => setAccount({ ...account,
-              firstName: e.target.value })}/>
-          <input value={account.lastName}
-            onChange={(e) => setAccount({ ...account,
-              lastName: e.target.value })}/>
-          <input value={account.dob}
-            onChange={(e) => setAccount({ ...account,
-              dob: e.target.value })}/>
-          <input value={account.email}
-            onChange={(e) => setAccount({ ...account,
-              email: e.target.value })}/>
-          <select onChange={(e) => setAccount({ ...account,
+        <div className={"account"}>
+            <div className={"row"} style={{ padding: '10px'}}>
+                <div className={"col-2"}>
+                    <input value={account.password}
+                           onChange={(e) => setAccount({ ...account,
+                               password: e.target.value })}/>
+                </div>
+            </div>
+            <div className={"row"} style={{ padding: '10px'}}>
+                <div className={"col-2"}>
+                    <input value={account.firstName}
+                           onChange={(e) => setAccount({ ...account,
+                               firstName: e.target.value })}/>
+                </div>
+            </div>
+            <div className={"row"} style={{ padding: '10px'}}>
+                <div className={"col-2"}>
+                    <input value={account.lastName}
+                           onChange={(e) => setAccount({ ...account,
+                               lastName: e.target.value })}/>
+                </div>
+            </div>
+            <div className={"row"} style={{ padding: '10px'}}>
+                <div className={"col-2"}>
+                    <input value={account.dob}
+                           onChange={(e) => setAccount({ ...account,
+                               dob: e.target.value })}/>
+                </div>
+            </div>
+            <div className={"row"} style={{ padding: '10px'}}>
+                <div className={"col-2"}>
+                    <input value={account.email}
+                           onChange={(e) => setAccount({ ...account,
+                               email: e.target.value })}/>
+                </div>
+            </div>
+          <select style={{ margin: '10px'}} onChange={(e) => setAccount({ ...account,
               role: e.target.value })}>
             <option value="USER">User</option>
             <option value="ADMIN">Admin</option>
@@ -63,18 +83,26 @@ function Account() {
         </div>
       )}
       <div className="row">
-                <div className="col-sm"> 
+                <div className="col-2">
                     <button className="btn btn-primary w-100" onClick={save}>
                         Save
                     </button>
-                    <button className="btn btn-danger w-100" onClick={signout} style={{marginTop: '10px'}}>
-                        Signout
-                    </button>
-                    <Link to="/project/admin/users" className="btn btn-warning w-100" style={{marginTop: '10px'}}>
-                        Users
-                    </Link>
                 </div>
+      </div>
+        <div className="row">
+            <div className={"col-2"}>
+                <button className="btn btn-danger w-100" onClick={signout} style={{marginTop: '10px'}}>
+                Signout
+                </button>
             </div>
+        </div>
+        <div className="row">
+            <div className={"col-2"}>
+                <Link to="/project/admin/users" className="btn btn-warning w-100" style={{marginTop: '10px'}}>
+                Users
+                </Link>
+            </div>
+        </div>
     </div>
   );
 };
